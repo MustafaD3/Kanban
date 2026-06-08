@@ -1,0 +1,8 @@
+services:
+  kanban-app:
+    build: .
+    image: kanban:latest
+    container_name: kanban
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
