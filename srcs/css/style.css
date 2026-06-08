@@ -1,0 +1,174 @@
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+margin:10px;
+font-family: Arial;
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: #fff;
+background-color: #ff5252;
+border: 2px solid #000;
+border-radius: 10px;
+box-shadow: 5px 5px 0px #000;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #fff;
+color: #ff5252;
+border: 2px solid #ff5252;
+box-shadow: 5px 5px 0px #ff5252;
+}
+
+.button:active {
+background-color: #fcf414;
+box-shadow: none;
+transform: translateY(4px);
+}
+
+#kanban{
+display:flex;
+gap:10px;
+}
+#kanban section{
+border:1px solid black;
+border-radius:8px;
+width:33%;
+min-height:700px;
+}
+#kanban section span{
+margin:10px;
+display:block;
+text-align:center;
+font-family:sans-serif;
+}
+#kanban section .message-container
+{
+padding:0px 20px;
+display:flex;
+flex-wrap:wrap;
+justify-content: center;
+gap:20px;
+}
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+.quote-container {
+margin-top: 40px;
+position: relative;
+}
+
+.note-container{
+display:flex;
+flex-direction:column;
+
+padding: 15px;
+}
+
+.note {
+	color: #222121;
+	position: relative;
+	width: 200px;
+	min-height:150px;
+	margin: 0 auto;
+	padding: 10px 5px;
+	font-family: Satisfy;
+	font-size: 16px;
+	scrollbar-width: none;
+	outline: none;
+}
+.author {
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color:rgb(91, 84, 84);
+}
+
+.yellow {
+	background: #f2ed6e;
+}
+
+.pin {
+	background-color: #aaa;
+	display: block;
+	height: 32px;
+	width: 2px;
+	position: absolute;
+	left: 50%;
+	top: -16px;
+	z-index: 1;
+}
+
+.pin:after {
+	background-color: #A31;
+	background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1), inset 3px 3px 3px hsla(0,0%,100%,.2), inset -3px -3px 3px hsla(0,0%,0%,.2), 23px 20px 3px hsla(0,0%,0%,.15);
+	content: '';
+	height: 12px;
+	left: -5px;
+	position: absolute;
+	top: -10px;
+	width: 12px;
+	}
+
+.pin:before {
+	background-color: hsla(0,0%,0%,0.1);
+	box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+	content: ''; 
+
+	height: 24px;
+	width: 2px;
+	left: 0;
+	position: absolute;
+	top: 8px;
+
+	transform: rotate(57.5deg);
+	-moz-transform: rotate(57.5deg);
+	-webkit-transform: rotate(57.5deg);
+	-o-transform: rotate(57.5deg);
+	-ms-transform: rotate(57.5deg);
+
+	transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+}
+
+.delete{
+	width:20px;
+	height: 2px;
+	display: block;
+	background-color:rgb(91, 84, 84);
+	transform: rotateZ(45deg);
+	position: absolute;
+	right: 5px;
+	top: 15px;
+	cursor: pointer;
+	
+}
+.delete::after{
+	width:14px;
+	height: inherit;
+	display: block;
+	background-color:inherit;
+	transform: rotateZ(90deg);
+	position: inherit;
+	content:"";
+	right: inherit;
+}
+textarea
+{
+	resize:none;
+	border:none;
+	background:#ffffff00;
+}
+.author-input{
+	height: 20px;
+	scrollbar-width: none;
+	outline: none;
+}
